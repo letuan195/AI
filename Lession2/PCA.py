@@ -130,8 +130,6 @@ class DemoPCA(object):
         plt.axis('off')
         plt.show()
 
-
-
 class BuildPCA(object):
     def __init__(self, data, n_components):
         self.data = data
@@ -201,6 +199,7 @@ class BuildPCA(object):
             f1.axes.get_xaxis().set_visible(False)
             f1.axes.get_yaxis().set_visible(False)
         plt.show()
+
 if __name__ == '__main__':
     mnist = fetch_mldata('MNIST original', data_home='/home/tuanlv/PycharmProjects/TrainingML/Day2')
     print(mnist.data.shape)
