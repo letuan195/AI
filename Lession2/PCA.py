@@ -205,10 +205,10 @@ if __name__ == '__main__':
     mnist = fetch_mldata('MNIST original', data_home='/home/tuanlv/PycharmProjects/TrainingML/Day2')
     print(mnist.data.shape)
 
-    #DemoPCA(mnist).algorithms()
+    DemoPCA(mnist.data).algorithms()
     #Kernel().algorithms()
     #TestPCA(mnist).algorithms()
-    BuildPCA(mnist.data[:1000,:], 59).algorithms(type='1')
+    #BuildPCA(mnist.data[:1000,:], 59).algorithms(type='1')
 
 
 
