@@ -3,13 +3,13 @@ import math
 def func(x, x0):
     return x**2 - x0
 
-def deviv_func(x):
+def deriv_func(x):
     return 2*x
 
 def new_ton_raphson(x0, n):
     x = x0/2
     for i in range(n):
-        h = func(x, x0)/deviv_func(x)
+        h = func(x, x0)/deriv_func(x)
         x = x - h
     return x
 n = 4
